@@ -4,17 +4,19 @@ public class Launcher {
 
   public static void displayTextNotes(NoteStore ns) {
     ArrayList<Note> textNotes = ns.getAllTextNotes();
-    int noteCounter = 0;
+    int noteCounter = 1;
     for (Note currentNote : textNotes) {
       System.out.println("Text Note " + noteCounter + ": " + currentNote.getCommaSeparatedContents());
+      noteCounter += 1;
     }
   }
 
   public static void displayTextAndImageNotes(NoteStore ns) {
     ArrayList<Note> textAndImageNotes = ns.getAllTextAndImageNotes();
-    int noteCounter = 0;
+    int noteCounter = 1;
     for (Note currentNote : textAndImageNotes) {
       System.out.println("Text and Image Note " + noteCounter + ": " + currentNote.getCommaSeparatedContents());
+      noteCounter += 1;
     }
   }
 
